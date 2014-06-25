@@ -9,11 +9,11 @@ public class Main {
         //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("start location: 1,2,N");
 
-        Rover rover =  new Rover(1, 2, Orientation.NORTH);
-        //Rover rover =  new Rover(3, 3, Orientation.EAST);
+        //Rover rover =  new Rover(1, 2, Orientation.NORTH);
+        Rover rover =  new Rover(3, 3, Orientation.EAST);
         System.out.println("instructions: ");
-        String instructions = "LMLMLMLMM";
-        //String instructions = "MMRMMRMRRM";
+        //String instructions = "LMLMLMLMM";
+        String instructions = "MMRMMRMRRM";
         for (char cmd : instructions.toCharArray()) {
             switch(cmd) {
                 case 'L': {
